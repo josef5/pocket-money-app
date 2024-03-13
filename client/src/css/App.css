@@ -1,0 +1,157 @@
+html {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.bg-color {
+  background-color: var(--bs-cyan);
+}
+
+.nav-masthead .nav-link {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link.sign-out {
+  cursor: pointer;
+}
+
+.nav-masthead .active {
+  color: var(--bs-white);
+}
+
+.balance-display .reload-button {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.reload-button svg > path.animate {
+  transform: rotate(360deg);
+  transform-origin: 50% 50%;
+  animation: spin 1s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360);
+  }
+}
+
+.balance-lg {
+  display: inline-block;
+  font-size: 5em;
+}
+
+.username.username {
+  color: hsla(0, 0%, 0%, 0.25);
+}
+
+.sign-out.sign-out {
+  color: hsla(0, 0%, 0%, 0.25);
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+form .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form .top-input {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+form .middle-input {
+  margin-bottom: -2px;
+  border-radius: 0;
+}
+
+form .bottom-input {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+form.update-balance {
+  width: 100%;
+}
+
+form.update-balance .buttons {
+  display: inline-block;
+  margin-bottom: 1em;
+  width: 104px;
+}
+
+form.update-balance .buttons button {
+  width: 45px;
+}
+
+.history-table {
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.history-table table {
+  font-size: 10pt;
+  text-align: left;
+  color: var(--bs-white);
+}
+
+.currency-input {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+}
+
+.currency-input > input {
+  text-align: right;
+}
+
+.currency-input > .clear-input-button {
+  position: absolute;
+  color: var(--bs-gray);
+  top: 0.2em;
+  left: 0.2em;
+  font-size: 1.25em;
+  line-height: 1em;
+  cursor: pointer;
+  padding: 0.45em;
+}
+
+@media only screen and (max-width: 375px) {
+  .balance-display .reload-button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
